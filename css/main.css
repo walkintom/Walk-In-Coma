@@ -2818,8 +2818,14 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
-			color: #d3d4e4;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/merch.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/merch.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/merch.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/merch.jpg");
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+			color: #fff;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
