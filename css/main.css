@@ -2388,7 +2388,7 @@
 			width: 50%;
 		}
 
-			.features li:nth-child(1) {
+			/* .features li:nth-child(1) {
 				background-color: rgba(0, 0, 0, 0.035);
 			}
 
@@ -2426,7 +2426,7 @@
 
 			.features li:nth-child(10) {
 				background-color: rgba(0, 0, 0, 0.35);
-			}
+			} */
 
 			.features li:before {
 				display: block;
