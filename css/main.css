@@ -2806,7 +2806,14 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/band.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/band.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/band.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/band.jpg");
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+			color: #fff;
 		}
 
 		.wrapper.style3 {
