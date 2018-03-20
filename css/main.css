@@ -3812,7 +3812,7 @@
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 4em 3em 2em 0;
+				padding: 4em 1em 2em 1em;
 			}
 
 		}
@@ -3820,7 +3820,7 @@
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 3em 2em 1em 0;
+				padding: 3em 1em 1em 1em;
 			}
 
 		}
