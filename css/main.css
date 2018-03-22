@@ -3654,8 +3654,8 @@
 /* Footer */
 
 	#footer {
-		padding: 2em 0 0 0;
-		background-color: #1E1C1C;
+		padding: 2em 0 1em 0;
+		background-color: rgba(0,0,0,0.45);
 		text-align: center;
 	}
 
