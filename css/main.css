@@ -3485,6 +3485,14 @@ body.is-menu-visible #menu {
 	opacity: 0;
 }
 
+@media screen and (max-width: 980px) {
+
+	#banner .more {
+		display: none;
+	}
+
+}
+
 @media screen and (max-width: 736px) {
 
 	#banner {
