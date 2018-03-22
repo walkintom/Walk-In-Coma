@@ -3764,5 +3764,5 @@
 
 
 	body.is-mobile.landing #footer {
-		background-color: #1E1C1C;
+		background-color: rgba(0,0,0,0.45);
 	}
