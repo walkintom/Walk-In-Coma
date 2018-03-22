@@ -3272,7 +3272,7 @@ body.is-menu-visible #menu {
 }
 
 #header nav > ul > li > a:hover {
-    color:#7F5859;
+    color:#4B1A1B;
 }
 
 #header nav > ul > li > a.menuToggle {
@@ -3737,7 +3737,7 @@ body.is-mobile #main > header {
 @media screen and (max-width: 736px) {
 
 	#footer {
-        padding: 3em 2em 1em 2em ;
+        padding: 3em 2em 1em 2em;
     }
 
 }
