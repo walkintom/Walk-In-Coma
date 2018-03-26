@@ -12,7 +12,6 @@ $(document).ready(function(){
         success: function(){
           console.log("Your form was successfully received!");
             alert("Your message was successfully sent.");
-            document.forms['contactForm'].reset();
         },
         error: function(){
           console.log("Failure. Try again.");
