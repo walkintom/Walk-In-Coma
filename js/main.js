@@ -100,7 +100,16 @@ $(function() {
     });
 });
 
-$('form').submit(function(){
-    jQuery.facebox('<iframe width="400" height="400" name="targetbox"></iframe>');
-    return true;
-}).prop('target','targetbox');
+var message = "";
+
+$("#sendMessage").on("click", function() {
+    message = $("#contactform").serialize();
+    $.ajax({
+        url: "//formspree.io/walkincoma@hotmail.co.uk", 
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    alert('Thanks for the email, we\'ll be in touch promptly.');
+    return false;
+});
