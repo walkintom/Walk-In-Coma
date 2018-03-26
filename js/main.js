@@ -105,8 +105,8 @@ var message = "";
 $("#sendMessage").on("click", function() {
     message = $("#contactform").serialize();
     $.ajax({
-        url: "https://formspree.io/walkincoma@hotmail.co.uk", 
-        method: "post",
+        url: "//formspree.io/walkincoma@hotmail.co.uk", 
+        method: "POST",
         data: {message: message},
         dataType: "json"
     });
