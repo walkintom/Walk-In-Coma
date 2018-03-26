@@ -11,7 +11,7 @@ $(document).ready(function(){
         data: $("#contactForm").serialize(),
         success: function(){
           console.log("Your form was successfully received!");
-          // Show a success message here...
+          $('#contactSuccess').show();
         },
         error: function(){
           console.log("Failure. Try again.");
