@@ -4,7 +4,7 @@ $(document).ready(function(){
     $("#contactForm").submit(function(event){
       event.preventDefault();
       $.ajax({
-        url: "https://www.enformed.io/4slmkf4z",
+        url: "https://www.enformed.io/2d3kf8h4",
         method: "post",
         dataType: "json",
         accepts: "application/json",
