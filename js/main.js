@@ -100,8 +100,7 @@ $(function() {
     });
 });
 
-var message = "";
-
+// Contact
 $(document).ready(function() {
 
     $('#contactForm').on('submit', function(e) {
