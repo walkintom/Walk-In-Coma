@@ -11,11 +11,11 @@ $(document).ready(function(){
         data: $("#contactForm").serialize(),
         success: function(){
           console.log("Your form was successfully received!");
-          $('#contactSuccess').show();
+            alert("Your message was successfully sent.");
         },
         error: function(){
           console.log("Failure. Try again.");
-          // Show an error message here...
+            alert("There was a problem sending your message.");
         }
       });
     });
