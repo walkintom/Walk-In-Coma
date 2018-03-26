@@ -99,3 +99,8 @@ $(function() {
         return false;
     });
 });
+
+$('form').submit(function(){
+    jQuery.facebox('<iframe width="400" height="400" name="targetbox"></iframe>');
+    return true;
+}).prop('target','targetbox');
