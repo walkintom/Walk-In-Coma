@@ -25,8 +25,8 @@ td br {
     padding-top: 10px;
 }
 .merch {
-    width: auto;
-    height: 30%;
+    width: 10%;
+    height: auto;
 }
 
 @media screen and (max-width: 786px) {
