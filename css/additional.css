@@ -24,6 +24,10 @@ td br {
 .inner iframe {
     padding-top: 10px;
 }
+.merch {
+    width: auto;
+    height: 30%;
+}
 
 @media screen and (max-width: 786px) {
 
@@ -31,9 +35,4 @@ td br {
     width: auto;
     height: auto;
     }
-}
-.merch {
-    width:auto;
-    height:5%;
-    margin-right:20px;
 }
