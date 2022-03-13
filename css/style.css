@@ -57,7 +57,6 @@ nav img {
 .parallax { 
   height: 100%;
   background: rgba(0, 0, 0, 0.6) url("../images/banner.jpg");  
-  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
