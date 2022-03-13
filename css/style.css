@@ -54,19 +54,19 @@ nav img {
 }
 
 /* Parallax */
-.parallax { 
+.parallax {
   height: 100%;
-  background: rgba(0, 0, 0, 0.6) url("../images/banner.jpg");  
+  background: rgba(0, 0, 0, 0.6) url("../images/banner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
-  @media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
-  }
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+     background-attachment: scroll;
+   }
 }
 .parallax-content {
   position: absolute;
