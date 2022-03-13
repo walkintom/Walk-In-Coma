@@ -155,7 +155,6 @@ nav img {
 
 /* Live */
 #live {
-  height: 50%;
   padding-bottom: 40px;
   scroll-margin-top: 75px;
   background: rgba(0,0,0, 0.6) url("../images/bg-live.jpg");  
