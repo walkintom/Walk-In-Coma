@@ -279,6 +279,7 @@ nav img {
 
 /* Contact */
 #contact {
+  height: 100%;
   scroll-margin-top: 55px;
 }
 #contact h1 {
