@@ -1,0 +1,330 @@
+/* Walk In Coma 2022 */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+/* Global */
+body, html {
+  height: 100%;
+  background-color: #000;
+  position: relative;
+}
+h1 {
+  padding-top: 10px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.link-light:hover {
+  color: #999 !important;
+}
+
+/* Navbar */
+nav {
+  background: rgba(0, 0, 0, 0.6);
+}
+nav a {
+  color: #fff !important;
+}
+nav a:hover {
+  color: #999 !important;
+}
+nav img {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 45px;
+  cursor: pointer;
+}
+.nav-link.active {
+  text-shadow: 1px 1px 10px #fff;
+}
+.navbar li {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+}    
+.custom-toggler.navbar-toggler {
+  border-color: #fff;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Parallax */
+.parallax { 
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6) url("../images/banner.jpg");  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.parallax-content {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.parallax-content img {
+  height: auto;
+  max-width: 100%;
+}
+.parallax-content h1 {
+  padding-top: 30px;
+}
+#home span {
+  font-size: 4em;
+}
+#scroll {
+  position: absolute;
+  bottom: 0;
+}
+.next {
+  left: 50%; 
+  transform: translatex(-50%);
+  z-index: 2;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+.next p {
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+}
+.next a i {
+  font-size: 3em;
+  padding-bottom: 20px;
+}
+.next i:hover {
+  color: #999;
+}
+
+/* Video */
+#video-container {
+  color: white;
+  background-size: 100%;
+  position: relative;
+}
+#video-container video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  vertical-align: baseline;
+  z-index: 500;
+}
+.video-caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+.video-caption a {
+  padding-top: 1px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.video-caption .fa-youtube {
+  font-size: 1.6em;
+  padding-right: 10px;
+  color: #FF0000;
+  float: left;
+}
+#playPause {
+  float: left;
+  font-size: 3em;
+  padding-right: 30px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+#playPause:hover {
+  color: #FF0000;
+}
+
+/* Live */
+#live {
+  height: 50%;
+  padding-bottom: 40px;
+  scroll-margin-top: 75px;
+  background: rgba(0,0,0, 0.6) url("../images/bg-live.jpg");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: darken;
+}
+#live h1 {
+  padding-bottom: 20px;
+}
+#live .table {
+  opacity: 80%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#live .table td {
+  border-bottom: none;
+}
+.table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>th {
+  background-color: #222529;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #CCC;
+}
+
+/* Music */
+#music {
+  scroll-margin-top: 70px;
+}
+#music h1 {
+  padding-bottom: 20px;
+}
+.music-captions {
+  padding-right: 15px;
+  padding-bottom: 15px;
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+/* Band */
+#band {
+  scroll-margin-top: 70px;
+  background: rgba(0,0,0, 0.6) url("../images/bg-band.jpg");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+#band h1 {
+  padding-bottom: 20px;
+}
+#band p {
+  width: 75%;
+  margin:0 auto;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
+
+/* Merch */
+#merch {
+  scroll-margin-top: 70px;
+}
+#merch h1 {
+  padding-bottom: 20px;
+}
+.card {
+  display: inline-block;
+  margin-right: 10px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.3em;
+  color: #fff;
+  background-color: #000;
+}
+.card h1 {
+  padding-bottom: 0 !important;
+  font-size: 1.5em;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+.card button a {
+  text-decoration: none;
+}
+
+/* Contact */
+#contact {
+  scroll-margin-top: 55px;
+}
+#contact h1 {
+  padding-bottom: 20px;
+}
+
+/* Footer */
+footer div {
+  background: rgba(0, 0, 0, 0.6) url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+ul.icons {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+}
+ul.icons li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+ul.icons li:last-child {
+	padding-right: 0 !important;
+}
+ul.icons.major {
+    padding: 1em 0;
+}
+ul.icons.major li {
+	padding-right: 3.5em;
+}
+footer .icons {
+  margin: 0;
+  padding:1em 0 1em 0;
+  font-size: 1.25em;
+  line-height: 2em;
+}
+footer .icons a {
+  color: #fff;
+}
+footer .icons a:hover {
+  color: #999;
+}
+footer .copyright {
+	color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+  padding-bottom:2em;
+}
