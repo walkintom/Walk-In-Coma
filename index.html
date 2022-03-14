@@ -210,9 +210,11 @@
   <section id="contact">
     <div class="text-white text-center">
       <h1>Contact</h1>
-      <!-- Messenger Chat plugin Code -->
-      <div id="fb-root"></div>
-      <div id="fb-customer-chat" class="fb-customerchat"></div>
+      <form action="https://formspree.io/f/moqrlvyg" method="POST">
+        <label>Your email:<input type="email" name="email"></label>
+        <label>Your message:<textarea name="message"></textarea></label>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 
@@ -234,6 +236,10 @@
       <p class="copyright">&copy; 2022 Walk In Coma . All rights reserved</p>
     </div>
   </footer>
+
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
+  <div id="fb-customer-chat" class="fb-customerchat"></div>  
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
