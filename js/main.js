@@ -1,7 +1,7 @@
 // Navbar Scroll Change
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 1950) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 1895) {
         document.getElementById("nav").style.background = "#333";
     } else {
         document.getElementById("nav").style.background = "rgba(0, 0, 0, 0.6)";
