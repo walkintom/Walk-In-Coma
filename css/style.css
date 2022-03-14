@@ -279,10 +279,15 @@ nav img {
 
 /* Contact */
 #contact {
+  width: 75%;
   scroll-margin-top: 55px;
 }
 #contact h1 {
   padding-bottom: 20px;
+}
+#contact form label {
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 /* Footer */
