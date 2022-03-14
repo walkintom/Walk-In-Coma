@@ -25,7 +25,7 @@ function playPause() {
 // ScrollSpy & Smooth Scrolling
 $(document).ready(function(){
     // Add scrollspy to <body>
-    $('body').scrollspy({target: ".navbar", offset: 75});   
+    $('body').scrollspy({target: ".navbar", offset: 71});   
   
     // Add smooth scrolling on all links inside the navbar
     $('a[href*="#"]').on('click', function(event) {
