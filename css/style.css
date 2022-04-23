@@ -16,7 +16,7 @@ h1 {
   letter-spacing: 0.3em;
 }
 .link-dark:hover {
-  color: #999 !important;
+  color: #000 !important;
 }
 .link-light:hover {
   color: #999 !important;
