@@ -187,19 +187,13 @@ nav img {
 #live .table td {
   border-bottom: none;
 }
-.table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>th, .table-striped>tbody>tr:nth-child(even)>th>a {
+.table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>th {
   color: #fff;
   background-color: #222529;
 }
-.table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>th>a:hover {
-  color: #ccc;
-}
-.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th, .table-striped>tbody>tr:nth-child(odd)>th>a {
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
   color: #000;
   background-color: #CCC;
-}
-.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th>a:hover {
-  color: #999;
 }
 
 /* Music */
