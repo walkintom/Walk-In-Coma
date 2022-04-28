@@ -188,9 +188,11 @@ nav img {
   border-bottom: none;
 }
 .table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>th {
+  color: #fff;
   background-color: #222529;
 }
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+  color: #000;
   background-color: #CCC;
 }
 
