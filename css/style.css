@@ -191,7 +191,7 @@ nav img {
   color: #fff;
   background-color: #222529;
 }
-.table.striped>tbody>tr:nth-child(even)>td>a:hover {
+.table.striped>tbody>tr:nth-child(even)>td a:hover {
   color: #ccc;
   text-decoration: line-through;
 }
