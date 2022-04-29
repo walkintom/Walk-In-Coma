@@ -191,9 +191,15 @@ nav img {
   color: #fff;
   background-color: #222529;
 }
+.table.stripe>tbody>tr:nth-child(even)>td>a:hover {
+  color:#ccc;
+}
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>td>a, .table-striped>tbody>tr:nth-child(odd)>th {
   color: #000;
   background-color: #CCC;
+}
+.table.stripe>tbody>tr:nth-child(odd)>td>a:hover {
+  color:#999;
 }
 
 /* Music */
