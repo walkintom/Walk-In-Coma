@@ -187,7 +187,7 @@ nav img {
 #live .table td {
   border-bottom: none;
 }
-.table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>td>a .table-striped>tbody>tr:nth-child(even)>th {
+.table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>td>a, .table-striped>tbody>tr:nth-child(even)>th {
   color: #fff;
   background-color: #222529;
 }
