@@ -55,6 +55,19 @@ nav img {
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.caption {
+  width: 100% !important;
+  text-align: right;
+  font-size: 0.8em !important;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.caption a {
+  color: #fff !important;
+}
+.caption a:hover {
+  color: #999 !important;
+}
 
 /* Parallax */
 .parallax {
@@ -163,26 +176,38 @@ nav img {
 
 /* Live */
 #live {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   scroll-margin-top: 75px;
   background: rgba(0,0,0, 0.6) url("../images/bg-live.jpg");  
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-blend-mode: darken;
 }
 #live h1 {
   padding-bottom: 20px;
 }
+#live p {
+  width: 75%;
+  margin: 0 auto;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
 #live .table {
   opacity: 80%;
   width: 75%;
+  max-width: 1200px;
+  min-width: 450px;
   margin: 0 auto;
   padding: 0;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  margin-bottom: 40px;
 }
 #live .table td {
   border-bottom: none;
@@ -230,7 +255,7 @@ nav img {
   background: rgba(0,0,0, 0.6) url("../images/bg-band.jpg");  
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-blend-mode: darken;
 }
 #band h1 {
@@ -297,7 +322,7 @@ nav img {
   background: rgba(0,0,0, 0.6) url("../images/bg-contact.jpg");  
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-blend-mode: darken;
   scroll-margin-top: 55px;
 }
@@ -313,6 +338,7 @@ nav img {
 }
 #contact form input[type=text], input[type=email]{
   width: 25%;
+  min-width: 300px;
   border: 1px solid #ccc;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -323,13 +349,15 @@ nav img {
 }
 #contact form textarea {
   width: 30%;
+  min-width: 400px;
   margin-bottom: 20px;
   opacity: 0.7;
   background-color: #000;
   color: #fff;
 }
 #contact form input[type=submit], input[type=reset] {
-  width: 5%;
+  width: 10%;
+  min-width: 100px;
   color: #000;
   background-color: #fff;
   border: none;
@@ -343,6 +371,15 @@ nav img {
 #contact form input:hover {
   opacity: 0.7;
 }
+#contact p {
+  width: 75%;
+  margin:0 auto;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
 
 /* Footer */
 footer div {
@@ -351,7 +388,7 @@ footer div {
   background-size: cover;
   background-blend-mode: darken;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: bottom ;
 }
 ul.icons {
 	cursor: default;
@@ -359,21 +396,21 @@ ul.icons {
 	padding-left: 0;
 }
 ul.icons li {
-    display: inline-block;
-    padding: 0 1em 0 0;
+  display: inline-block;
+  padding: 0 1em 0 0;  
 }
 ul.icons li:last-child {
 	padding-right: 0 !important;
 }
 ul.icons.major {
-    padding: 1em 0;
+  padding: 1em 0;
 }
 ul.icons.major li {
 	padding-right: 3.5em;
 }
 footer .icons {
   margin: 0;
-  padding:1em 0 1em 0;
+  padding: 1em 0 1em 0;
   font-size: 1.25em;
   line-height: 2em;
 }
