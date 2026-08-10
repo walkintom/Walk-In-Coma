@@ -49,3 +49,36 @@ $(document).ready(function(){
       }  // End if
     });
   });
+
+  // Video Play/Pause Button Event Listener
+const video = document.getElementById("video-promo");
+const playPauseButton = document.getElementById("playPause");
+const playPauseIcon = playPauseButton.querySelector("i");
+
+function updatePlayPauseButton() {
+  const isPaused = video.paused;
+
+  playPauseButton.setAttribute(
+    "aria-label",
+    isPaused ? "Play promotional video" : "Pause promotional video"
+  );
+
+  playPauseIcon.classList.toggle("fa-play-circle", isPaused);
+  playPauseIcon.classList.toggle("fa-pause-circle", !isPaused);
+}
+
+playPauseButton.addEventListener("click", () => {
+  if (video.paused) {
+    video.play().catch(() => {
+      // Playback may be blocked by the browser.
+      updatePlayPauseButton();
+    });
+  } else {
+    video.pause();
+  }
+});
+
+video.addEventListener("play", updatePlayPauseButton);
+video.addEventListener("pause", updatePlayPauseButton);
+
+updatePlayPauseButton();
