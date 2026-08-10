@@ -50,35 +50,44 @@ $(document).ready(function(){
     });
   });
 
-  // Video Play/Pause Button Event Listener
-const video = document.getElementById("video-promo");
-const playPauseButton = document.getElementById("playPause");
-const playPauseIcon = playPauseButton.querySelector("i");
+// Video Play/Pause Button Event Listener
+document.addEventListener("DOMContentLoaded", () => {
+  const promoVideo = document.getElementById("video-promo");
+  const toggleButton = document.getElementById("playPause");
+  const toggleIcon = toggleButton?.querySelector("i");
 
-function updatePlayPauseButton() {
-  const isPaused = video.paused;
-
-  playPauseButton.setAttribute(
-    "aria-label",
-    isPaused ? "Play promotional video" : "Pause promotional video"
-  );
-
-  playPauseIcon.classList.toggle("fa-play-circle", isPaused);
-  playPauseIcon.classList.toggle("fa-pause-circle", !isPaused);
-}
-
-playPauseButton.addEventListener("click", () => {
-  if (video.paused) {
-    video.play().catch(() => {
-      // Playback may be blocked by the browser.
-      updatePlayPauseButton();
-    });
-  } else {
-    video.pause();
+  if (!promoVideo || !toggleButton || !toggleIcon) {
+    console.error("Promotional video controls were not found.");
+    return;
   }
+
+  function updateVideoControl() {
+    const paused = promoVideo.paused;
+
+    toggleButton.setAttribute(
+      "aria-label",
+      paused ? "Play promotional video" : "Pause promotional video"
+    );
+
+    toggleIcon.classList.toggle("fa-play-circle", paused);
+    toggleIcon.classList.toggle("fa-pause-circle", !paused);
+  }
+
+  toggleButton.addEventListener("click", async () => {
+    try {
+      if (promoVideo.paused) {
+        await promoVideo.play();
+      } else {
+        promoVideo.pause();
+      }
+    } catch (error) {
+      console.error("Video playback failed:", error);
+    }
+
+    updateVideoControl();
+  });
+
+  promoVideo.addEventListener("play", updateVideoControl);
+  promoVideo.addEventListener("pause", updateVideoControl);
+  updateVideoControl();
 });
-
-video.addEventListener("play", updatePlayPauseButton);
-video.addEventListener("pause", updatePlayPauseButton);
-
-updatePlayPauseButton();
