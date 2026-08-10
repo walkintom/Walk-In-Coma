@@ -248,6 +248,14 @@ nav img {
   letter-spacing: 0.1em;
   text-align: left;
 }
+.bandcamp-player {
+  display: block;
+  width: min(350px, 100%);
+  aspect-ratio: 1 / 1;
+  height: auto;
+  margin-inline: auto;
+  border: 0;
+}
 
 /* Band */
 #band {
