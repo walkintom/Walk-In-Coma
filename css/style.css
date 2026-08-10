@@ -283,8 +283,9 @@ nav img {
 #merch {
   scroll-margin-top: 70px;
 }
-#merch h1 {
+#merch h3 {
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 .card {
   display: inline-block;
