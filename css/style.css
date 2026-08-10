@@ -333,6 +333,10 @@ nav img {
   outline: 2px solid #fff;
   outline-offset: 3px;
 }
+.card .sold-out {
+  cursor: default;
+  opacity: 0.6;
+}
 
 /* Contact */
 #contact {
