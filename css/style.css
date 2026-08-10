@@ -283,9 +283,8 @@ nav img {
 #merch {
   scroll-margin-top: 70px;
 }
-#merch h3 {
-  padding-bottom: 20px !important;
-  text-transform: uppercase;
+#merch h1 {
+  padding-bottom: 20px;
 }
 .card {
   display: inline-block;
@@ -301,7 +300,8 @@ nav img {
   background-color: #000;
 }
 .card h3 {
-  padding-bottom: 0 !important;
+  /* padding-bottom: 0 !important; */
+    text-transform: uppercase;
   font-size: 1.5em;
 }
 .price {
