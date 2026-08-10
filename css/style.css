@@ -309,22 +309,29 @@ nav img {
   color: grey;
   font-size: 22px;
 }
-.card button {
+.card .buy-button {
+  display: inline-block;
+  width: 25%;
   border: none;
-  outline: 0;
+  padding: 1px 6px;
   color: #000;
   background-color: #fff;
-  text-align: center;
-  cursor: pointer;
-  width: 25%;
   font-size: 18px;
-  text-transform: uppercase;
-}
-.card button:hover {
-  opacity: 0.7;
-}
-.card button a {
+  line-height: normal;
+  text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.card .buy-button:hover,
+.card .buy-button:focus-visible {
+  color: #000;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.card .buy-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
 /* Contact */
